@@ -25,11 +25,38 @@
     <Content Include="content\css\app.css" />
     <Content Include="content\images\logo.png" />
     <Content Include="index.html" />
+    <Content Include="node_modules\vss-web-extension-sdk\img\dependencies.png" />
+    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.js" />
+    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.min.js" />
     <Content Include="sdk\vss-web-extension-sdk\VSS.SDK.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="vss-extension.json" />
+    <Content Include="node_modules\%40types\jqueryui\package.json" />
+    <Content Include="node_modules\%40types\jqueryui\README.md" />
+    <Content Include="node_modules\%40types\jqueryui\types-metadata.json" />
+    <Content Include="node_modules\%40types\jquery\package.json" />
+    <Content Include="node_modules\%40types\jquery\README.md" />
+    <Content Include="node_modules\%40types\jquery\types-metadata.json" />
+    <Content Include="node_modules\%40types\knockout\package.json" />
+    <Content Include="node_modules\%40types\knockout\README.md" />
+    <Content Include="node_modules\%40types\knockout\types-metadata.json" />
+    <Content Include="node_modules\%40types\q\package.json" />
+    <Content Include="node_modules\%40types\q\README.md" />
+    <Content Include="node_modules\%40types\q\types-metadata.json" />
+    <Content Include="node_modules\%40types\react\package.json" />
+    <Content Include="node_modules\%40types\react\README.md" />
+    <Content Include="node_modules\%40types\react\types-metadata.json" />
+    <Content Include="node_modules\%40types\requirejs\package.json" />
+    <Content Include="node_modules\%40types\requirejs\README.md" />
+    <Content Include="node_modules\%40types\requirejs\types-metadata.json" />
+    <Content Include="node_modules\vss-web-extension-sdk\.npmignore" />
+    <Content Include="node_modules\vss-web-extension-sdk\bower.json" />
+    <Content Include="node_modules\vss-web-extension-sdk\LICENSE" />
+    <Content Include="node_modules\vss-web-extension-sdk\package.json" />
+    <Content Include="node_modules\vss-web-extension-sdk\README.md" />
+    <Content Include="node_modules\vss-web-extension-sdk\tsconfig.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -38,6 +65,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="node_modules\%40types\jqueryui\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\jquery\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\knockout\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\q\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\react\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\requirejs\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\rmo.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\tfs.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\vss.d.ts" />
     <TypeScriptCompile Include="scripts\app.ts" />
   </ItemGroup>
   <ItemGroup />

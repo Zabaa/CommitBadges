@@ -244,4 +244,5 @@ ModelManifest.xml
 **/*.js
 **/*.map
 !**/sdk/**/*.js
+!**/node_modules/**/*.js
 *.vsix
