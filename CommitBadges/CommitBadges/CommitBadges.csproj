@@ -76,7 +76,7 @@
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\rmo.d.ts" />
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\tfs.d.ts" />
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\vss.d.ts" />
-    <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\my-module\app.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
