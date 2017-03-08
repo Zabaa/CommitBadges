@@ -42,9 +42,14 @@
       "packagePath": "lib"
     },
     {
-      "path": "content",
+      "path": "src",
       "addressable": true,
-      "packagePath": "content"
+      "packagePath": "src"
+    },
+    {
+      "path": "static",
+      "addressable": true,
+      "packagePath": "static"
     }
   ]
 }

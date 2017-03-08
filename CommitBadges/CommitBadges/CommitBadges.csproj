@@ -22,17 +22,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="content\css\app.css" />
-    <Content Include="content\images\logo.png" />
-    <Content Include="index.html" />
-    <Content Include="node_modules\vss-web-extension-sdk\img\dependencies.png" />
-    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.js" />
-    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.min.js" />
-    <Content Include="sdk\vss-web-extension-sdk\VSS.SDK.js" />
-    <Content Include="web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="vss-extension.json" />
     <Content Include="node_modules\%40types\jqueryui\package.json" />
     <Content Include="node_modules\%40types\jqueryui\README.md" />
     <Content Include="node_modules\%40types\jqueryui\types-metadata.json" />
@@ -53,10 +42,22 @@
     <Content Include="node_modules\%40types\requirejs\types-metadata.json" />
     <Content Include="node_modules\vss-web-extension-sdk\.npmignore" />
     <Content Include="node_modules\vss-web-extension-sdk\bower.json" />
+    <Content Include="node_modules\vss-web-extension-sdk\img\dependencies.png" />
+    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.js" />
+    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.min.js" />
     <Content Include="node_modules\vss-web-extension-sdk\LICENSE" />
     <Content Include="node_modules\vss-web-extension-sdk\package.json" />
     <Content Include="node_modules\vss-web-extension-sdk\README.md" />
     <Content Include="node_modules\vss-web-extension-sdk\tsconfig.json" />
+    <Content Include="static\css\app.css" />
+    <Content Include="static\images\logo.png" />
+    <Content Include="index.html" />
+    <Content Include="tsconfig.json" />
+    <Content Include="vss-extension.json" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -75,7 +76,7 @@
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\rmo.d.ts" />
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\tfs.d.ts" />
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\vss.d.ts" />
-    <TypeScriptCompile Include="scripts\app.ts" />
+    <TypeScriptCompile Include="src\app.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

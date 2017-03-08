@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>TypeScript HTML App</title>
-    <link rel="stylesheet" href="content/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/app.css" type="text/css" />
     <script src="lib/VSS.SDK.js"></script>
 </head>
 <body>
@@ -14,17 +14,13 @@
     <script type="text/javascript">
     // Initialize the VSS sdk
     VSS.init({
-        setupModuleLoader: true,
-        moduleLoaderConfig: {
-            paths: {
-                "Scripts": "scripts"
-            }
-        }
+        usePlatformScripts: true,
+        usePlatformStyles: true
     });
 
     // Wait for the SDK to be initialized
     VSS.ready(function () {
-        require(["Scripts/app"], function (app) { });
+        require(["src/app"], function (app) { });
     });
     </script>
 </body>

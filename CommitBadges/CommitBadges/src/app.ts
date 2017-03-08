@@ -1,4 +1,12 @@
-﻿class Greeter {
+﻿/// <reference types="vss-web-extension-sdk" />
+
+import Controls = require("VSS/Controls");
+import Grids = require("VSS/Controls/Grids");
+import tf = require("TFS/WorkItemTracking/RestClient")
+
+
+
+class Greeter {
     element: HTMLElement;
     span: HTMLElement;
     timerToken: number;
