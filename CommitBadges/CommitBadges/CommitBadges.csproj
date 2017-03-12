@@ -77,6 +77,7 @@
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\tfs.d.ts" />
     <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\vss.d.ts" />
     <TypeScriptCompile Include="src\my-module\app.ts" />
+    <TypeScriptCompile Include="src\my-module\CommitBadges.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

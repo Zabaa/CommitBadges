@@ -10,19 +10,20 @@
 <body>
     <h1>CommitBadge HTML App</h1>
     <div id="content"></div>
-    <dic id="sample-container"></dic>
-    
-    <script type="text/javascript">
-    // Initialize the VSS sdk
-    VSS.init({
-        usePlatformScripts: true,
-        usePlatformStyles: true
-    });
+    <dic id="grid_container"></dic>
 
-    // Wait for the SDK to be initialized
-    VSS.ready(function () {
-        require(["my-module/app"], function (app) { });
-    });
+    <script type="text/javascript">
+        // Initialize the VSS sdk
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformScripts: true,
+            usePlatformStyles: true
+        });
+
+        // Wait for the SDK to be initialized
+        VSS.ready(function () {
+            VSS.require(["src/my-module/app"], function (app) { });
+        });
     </script>
 </body>
 </html>
