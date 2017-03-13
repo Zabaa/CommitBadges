@@ -6,5 +6,3 @@ VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
 
     VSS.notifyLoadSucceeded();
 });
-
-
