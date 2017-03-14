@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p .",
     "postbuild": "npm run package",
-    "package": "tfx extension create --manifest-globs vss-extension.json",
+    "package": "tfx extension create --manifest-globs vss-extension.json --rev-version",
     "clean": "rimraf ./src/*.js && rimraf ./*.vsix"
   },
   "devDependencies": {
