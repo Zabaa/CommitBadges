@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\my-module\app.ts" />
+    <TypeScriptCompile Include="src\my-module\badges\Badge.ts" />
+    <TypeScriptCompile Include="src\my-module\badges\BugsBadge.ts" />
+    <TypeScriptCompile Include="src\my-module\badges\TasksBadges.ts" />
     <TypeScriptCompile Include="src\my-module\CommitBadges.ts" />
   </ItemGroup>
   <ItemGroup />

@@ -6,6 +6,7 @@ VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
 
     var commitBadges = new CommitBadges.CommitBadges();
     commitBadges.buildGrid();
+    commitBadges.buildDateTimeCombo();
 
     VSS.notifyLoadSucceeded();
 });

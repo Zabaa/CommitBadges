@@ -18,8 +18,8 @@ export class CommitBadges {
         ];
 
         var gridOptions: Grids.IGridOptions = {
-            height: "400px",
-            width: "250px",
+            height: "80%",
+            width: "80%",
             source: source,
             columns: [
                 { text: "Country", width: 200, index: "name" },
