@@ -3,12 +3,16 @@
     "module": "amd",
     "moduleResolution": "node",
     "target": "es5",
+    "lib": [ "es6", "dom" ],
     "typeRoots": [
       "./node_modules/@types"
     ],
     "types": [
-      "vss-web-extension-sdk"
-    ]
+      "vss-web-extension-sdk",
+      "reflect-metadata"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": [
     "src/**/*.ts"

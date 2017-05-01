@@ -1,13 +1,12 @@
 {
-	"version": "1.0.0",
-	"name": "commit-badges",
-	"private": true,
-
+  "version": "1.0.0",
+  "name": "commit-badges",
+  "private": true,
   "scripts": {
     "build": "tsc -p .",
     "postbuild": "npm run package",
     "package": "tfx extension create --manifest-globs vss-extension.json --rev-version",
-    "clean": "rimraf ./src/*.js && rimraf ./*.vsix"
+    "clean": "rimraf ./src/**/*.js && rimraf ./*.vsix"
   },
   "devDependencies": {
     "rimraf": "^2.5.4",
@@ -17,10 +16,16 @@
   "dependencies": {
     "@types/jquery": "^2.0.34",
     "@types/q": "0.0.32",
+    "inversify": "^4.1.0",
+    "reflect-metadata": "^0.1.10",
     "vss-web-extension-sdk": "^2.109.0"
   },
   "-vs-binding": {
-    "AfterBuild": [ "build" ],
-    "Clean": [ "clean" ]
+    "AfterBuild": [
+      "build"
+    ],
+    "Clean": [
+      "clean"
+    ]
   }
 }

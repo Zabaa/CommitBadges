@@ -1,7 +1,7 @@
 ﻿{
   "namespace": "CommitBadges",
   "name": "Commit Badges",
-  "version": "0.1.4",
+  "version": "0.1.9",
   "description": "A simple extension for Visual Studio Online of a user's badges for achivements like numbers of resolved bugs",
   "publisher": "lukaszzaborski",
   "targets": [
@@ -40,6 +40,11 @@
       "path": "node_modules/vss-web-extension-sdk/lib",
       "addressable": true,
       "packagePath": "lib"
+    },
+    {
+      "path": "node_modules/inversify/lib",
+      "addressable": true,
+      "packagePaths": "inversify"
     },
     {
       "path": "static",

@@ -43,8 +43,12 @@
     <TypeScriptCompile Include="src\my-module\badges\Badge.ts" />
     <TypeScriptCompile Include="src\my-module\badges\bugs\BugsBadge.ts" />
     <TypeScriptCompile Include="src\my-module\badges\bugs\BugsQuery.ts" />
+    <TypeScriptCompile Include="src\my-module\badges\bugs\Interfaces.ts" />
+    <TypeScriptCompile Include="src\my-module\badges\bugs\WarriorsTypes.ts" />
     <TypeScriptCompile Include="src\my-module\badges\TasksBadges.ts" />
     <TypeScriptCompile Include="src\my-module\CommitBadges.ts" />
+    <TypeScriptCompile Include="src\my-module\di\containerTypes.ts" />
+    <TypeScriptCompile Include="src\my-module\di\inversify.config.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
