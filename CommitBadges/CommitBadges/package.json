@@ -16,8 +16,6 @@
   "dependencies": {
     "@types/jquery": "^2.0.34",
     "@types/q": "0.0.32",
-    "inversify": "^4.1.0",
-    "reflect-metadata": "^0.1.10",
     "vss-web-extension-sdk": "^2.109.0"
   },
   "-vs-binding": {

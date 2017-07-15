@@ -8,8 +8,7 @@
       "./node_modules/@types"
     ],
     "types": [
-      "vss-web-extension-sdk",
-      "reflect-metadata"
+      "vss-web-extension-sdk"
     ],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true

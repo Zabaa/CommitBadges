@@ -1,10 +1,6 @@
 ﻿import RestClient = require("TFS/WorkItemTracking/RestClient");
-//import '../Badge';
+import '../Badge';
 import BugsQuery = require("./BugsQuery")
-import container from "../../di/inversify.config";
-import { Warrior, Weapon, ThrowableWeapon } from "./Interfaces";
-import { TYPES } from "../../di/containerTypes";
-
 
 export class BugsBadge extends Badge {
 
@@ -13,7 +9,6 @@ export class BugsBadge extends Badge {
         var projectId = VSS.getWebContext().project.id;
         var userId = VSS.getWebContext().user.id;
 
-        this.DITest();
 
         var query = { query: BugsQuery.BugsQuery.query };
 
@@ -34,12 +29,6 @@ export class BugsBadge extends Badge {
 
     public CompareResultWithRequirements(): void {
         
-    }
-
-    public DITest(): void {
-        var ninja = container.get<Warrior>(TYPES.Warrior);
-        console.log(ninja.sneak());
-        console.log(ninja.fight());
     }
 }
 
