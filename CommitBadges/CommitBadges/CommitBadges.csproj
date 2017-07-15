@@ -39,12 +39,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\my-module\abstracts\ResultComparator.ts" />
+    <TypeScriptCompile Include="src\my-module\abstracts\ViewBuilder.ts" />
     <TypeScriptCompile Include="src\my-module\app.ts" />
     <TypeScriptCompile Include="src\my-module\badges\Badge.ts" />
     <TypeScriptCompile Include="src\my-module\badges\bugs\BugsBadge.ts" />
     <TypeScriptCompile Include="src\my-module\badges\bugs\BugsQuery.ts" />
-    <TypeScriptCompile Include="src\my-module\badges\TasksBadges.ts" />
     <TypeScriptCompile Include="src\my-module\CommitBadges.ts" />
+    <TypeScriptCompile Include="src\my-module\factories\BugsBadgeFactory.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

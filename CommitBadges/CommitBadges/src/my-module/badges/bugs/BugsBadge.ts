@@ -1,8 +1,11 @@
-﻿import RestClient = require("TFS/WorkItemTracking/RestClient");
+﻿
+import RestClient = require("TFS/WorkItemTracking/RestClient");
 import '../Badge';
 import BugsQuery = require("./BugsQuery")
 
 export class BugsBadge extends Badge {
+
+    private bb: Badge;
 
     public SelectQuery(): void {
         var client = RestClient.getClient();
