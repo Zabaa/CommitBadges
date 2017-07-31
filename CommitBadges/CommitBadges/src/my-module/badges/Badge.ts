@@ -1,13 +1,5 @@
-﻿abstract class Badge {
-    name: string;
-    points: number;
-    requiredPoints: number;
+﻿namespace Badges {
+    export interface Badge {
 
-    public abstract SelectQuery(): void;
-    public abstract CompareResultWithRequirements(): void
-
-    public LoadBadge(): void {
-        this.SelectQuery();
-        this.CompareResultWithRequirements();
     }
 }

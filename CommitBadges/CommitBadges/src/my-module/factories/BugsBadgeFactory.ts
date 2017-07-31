@@ -9,8 +9,6 @@ namespace Factories {
 
         public create() {
             var client = RestClient.getClient();
-
-            var client = RestClient.getClient();
             var projectId = VSS.getWebContext().project.id;
             var userId = VSS.getWebContext().user.id;
 
@@ -19,9 +17,7 @@ namespace Factories {
 
             client.queryByWiql(query, projectId).then(result => {
                 console.log(result.workItems.length);
-
                 this.resultComparer.compare(result.workItems.length);
-
                 this.viewBuilder.build();
             });
         }
