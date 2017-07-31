@@ -1,5 +1,5 @@
 ﻿namespace Badges {
-    export interface Badge {
+    export class BugsSlayerBadge implements Badge {
         name: string;
         description: string;
         points: number;
