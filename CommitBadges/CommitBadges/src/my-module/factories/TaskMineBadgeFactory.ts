@@ -22,13 +22,13 @@ export class TaskMineBadgeFactory extends Factories.BadgeFactory {
         var projectId = VSS.getWebContext().project.id;
         var userId = VSS.getWebContext().user.id;
 
-        var queryText = this.getQuery(userId);
-        var query = { query: queryText };
+        var query = { query: this.getQuery(userId) };
 
         client.queryByWiql(query, projectId).then(result => {
             console.log(result.workItems.length);
-            this.resultComparer.compare(result.workItems.length);
-            this.viewBuilder.build();
+            var badge = new Badges.TaskMineBadge();
+            this.resultComparer.compare(result.workItems.length, badge);
+            this.viewBuilder.build(badge);
         });
     }
 

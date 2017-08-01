@@ -1,5 +1,5 @@
 ﻿namespace ViewBuilders {
     export interface ViewBuilder {
-        build();
+        build(badge: Badges.Badge);
     }
 }
