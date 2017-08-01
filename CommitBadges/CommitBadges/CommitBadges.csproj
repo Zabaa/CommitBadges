@@ -39,8 +39,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\my-module\abstracts\ResultComparator.ts" />
-    <TypeScriptCompile Include="src\my-module\abstracts\ViewBuilder.ts" />
     <TypeScriptCompile Include="src\my-module\app.ts" />
     <TypeScriptCompile Include="src\my-module\badges\Badge.ts" />
     <TypeScriptCompile Include="src\my-module\badges\bugs\BugsSlayerBadge.ts" />
@@ -49,6 +47,8 @@
     <TypeScriptCompile Include="src\my-module\factories\BadgeFactory.ts" />
     <TypeScriptCompile Include="src\my-module\factories\BugsSlayerBadgeFactory.ts" />
     <TypeScriptCompile Include="src\my-module\factories\TaskMineBadgeFactory.ts" />
+    <TypeScriptCompile Include="src\my-module\result-comparators\ResultComparator.ts" />
+    <TypeScriptCompile Include="src\my-module\view-builders\ViewBuilder.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

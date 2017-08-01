@@ -1,6 +1,5 @@
-﻿namespace Abstracts {
+﻿namespace Comparators {
     export interface ResultComparator {
         compare(count: number);
     }
 }
-

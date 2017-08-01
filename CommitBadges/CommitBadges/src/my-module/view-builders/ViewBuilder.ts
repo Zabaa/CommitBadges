@@ -1,6 +1,5 @@
-﻿namespace Abstracts {
+﻿namespace ViewBuilders {
     export interface ViewBuilder {
         build();
     }
 }
-

@@ -2,10 +2,10 @@
 
 export class BugsSlayerBadgeFactory extends Factories.BadgeFactory {
 
-    private resultComparer: Abstracts.ResultComparator;
-    private viewBuilder: Abstracts.ViewBuilder;
+    private resultComparer: Comparators.ResultComparator;
+    private viewBuilder: ViewBuilders.ViewBuilder;
 
-    constructor(resultComparer: Abstracts.ResultComparator, viewBuilder: Abstracts.ViewBuilder) {
+    constructor(resultComparer: Comparators.ResultComparator, viewBuilder: ViewBuilders.ViewBuilder) {
         super();
 
         if (resultComparer == null)
@@ -22,7 +22,7 @@ export class BugsSlayerBadgeFactory extends Factories.BadgeFactory {
         var projectId = VSS.getWebContext().project.id;
         var userId = VSS.getWebContext().user.id;
 
-        var queryText = this.getQuery();
+        var queryText = this.getQuery(userId);
         var query = { query: queryText };
 
         client.queryByWiql(query, projectId).then(result => {
@@ -32,7 +32,7 @@ export class BugsSlayerBadgeFactory extends Factories.BadgeFactory {
         });
     }
 
-    private getQuery(): string {
+    private getQuery(userId: string): string {
         return "TODO: create wiql query";
     }
 }
