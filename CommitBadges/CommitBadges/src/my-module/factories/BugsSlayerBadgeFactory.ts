@@ -33,7 +33,14 @@ export class BugsSlayerBadgeFactory extends Factories.BadgeFactory {
     }
 
     private getQuery(userId: string): string {
-        return "TODO: create wiql query";
+        return `SELECT [System.Id]
+                FROM workitems
+                WHERE [System.TeamProject] = @project
+                AND [System.WorkItemType] = "Bug"
+                AND [System.State] = "Closed"
+                AND [system.AssignedTo] EVER @me
+                AND [System.AssignedTo] <> @me
+                ORDER BY [System.ChangedDate] DESC`;
     }
 }
 
