@@ -38,9 +38,7 @@ export class BugsSlayerBadgeFactory extends Factories.BadgeFactory {
                 WHERE [System.TeamProject] = @project
                 AND [System.WorkItemType] = "Bug"
                 AND [System.State] = "Closed"
-                AND [system.AssignedTo] EVER @me
-                AND [System.AssignedTo] <> @me
-                ORDER BY [System.ChangedDate] DESC`;
+                AND [Resolved By] = ${userId}`;
     }
 }
 

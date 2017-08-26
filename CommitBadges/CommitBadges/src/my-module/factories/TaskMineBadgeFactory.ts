@@ -33,6 +33,10 @@ export class TaskMineBadgeFactory extends Factories.BadgeFactory {
     }
 
     private getQuery(userId: string): string {
-        return "TODO: create wiql query";
+        return `SELECT [System.Id]
+                FROM workitems
+                WHERE [System.TeamProject] = @project
+                AND [System.WorkItemType] = "Task"
+                AND [System.CreatedBy] = ${userId}`
     }
 }
