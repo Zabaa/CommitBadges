@@ -4,5 +4,6 @@
         description: string;
         points: number;
         requiredPoints: number;
+        granted(): boolean
     }
 }

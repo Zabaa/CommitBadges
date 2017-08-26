@@ -10,5 +10,9 @@
             this.requiredPoints = 50;
             this.description = `Resolve at least ${this.requiredPoints} bugs`;
         }
+
+        granted(): boolean {
+            return this.points >= this.requiredPoints;
+        }
     }
 }

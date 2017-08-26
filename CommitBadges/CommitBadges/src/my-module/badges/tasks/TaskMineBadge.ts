@@ -10,5 +10,9 @@
             this.requiredPoints = 50;
             this.description = `Create at least ${this.requiredPoints} tasks`;
         }
+
+        granted(): boolean {
+            return this.points >= this.requiredPoints;
+        }
     }
 }

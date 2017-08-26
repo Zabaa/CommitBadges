@@ -47,7 +47,9 @@
     <TypeScriptCompile Include="src\my-module\factories\BadgeFactory.ts" />
     <TypeScriptCompile Include="src\my-module\factories\BugsSlayerBadgeFactory.ts" />
     <TypeScriptCompile Include="src\my-module\factories\TaskMineBadgeFactory.ts" />
+    <TypeScriptCompile Include="src\my-module\result-comparators\DefaultResultComparator.ts" />
     <TypeScriptCompile Include="src\my-module\result-comparators\ResultComparator.ts" />
+    <TypeScriptCompile Include="src\my-module\view-builders\DefaultViewBuilders.ts" />
     <TypeScriptCompile Include="src\my-module\view-builders\ViewBuilder.ts" />
   </ItemGroup>
   <ItemGroup />
