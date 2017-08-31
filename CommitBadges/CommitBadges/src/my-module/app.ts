@@ -1,12 +1,10 @@
 ﻿import CommitBadges = require("./CommitBadges");
+import FactoriesProcessor = require("./FactoriesProcessor");
 
 VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
 
-    $("#content").text("List of badges");
-
-    var commitBadges = new CommitBadges.CommitBadges();
-    commitBadges.buildGrid();
-    commitBadges.buildDateTimeCombo();
+    var factoriesProcessor = new FactoriesProcessor.FactoriesProcessor();
+    factoriesProcessor.runAllFactories();
 
     VSS.notifyLoadSucceeded();
 });

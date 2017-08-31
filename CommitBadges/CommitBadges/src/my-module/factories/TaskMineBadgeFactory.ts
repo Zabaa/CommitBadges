@@ -2,19 +2,8 @@
 
 export class TaskMineBadgeFactory extends Factories.BadgeFactory {
 
-    private resultComparer: Comparators.ResultComparator;
-    private viewBuilder: ViewBuilders.ViewBuilder;
-
     constructor(resultComparer: Comparators.ResultComparator, viewBuilder: ViewBuilders.ViewBuilder) {
-        super();
-
-        if (resultComparer == null)
-            throw new Error('resultComparer is null');
-        this.resultComparer = resultComparer;
-
-        if (viewBuilder == null)
-            throw new Error('viewBuilder is null');
-        this.viewBuilder = viewBuilder
+        super(resultComparer, viewBuilder);
     }
 
     public create() {
