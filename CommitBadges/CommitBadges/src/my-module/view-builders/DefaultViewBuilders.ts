@@ -2,11 +2,13 @@
 
 import Controls = require("VSS/Controls");
 import Grids = require("VSS/Controls/Grids");
+import { ViewBuilder } from "./ViewBuilder";
+import { Badge } from "./../badges/Badge";
 
-export class DefaultViewBuilder implements ViewBuilders.ViewBuilder {
-    build(badge: Badges.Badge) {
+export class DefaultViewBuilder implements ViewBuilder {
+    public build(badge: Badge) {
 
-        let gridContainer = $("#BugsSlayerBadge");
+        let gridContainer = $(`#${badge.constructor.name}`);
 
         var source = [
             { key: "Name", value: badge.name },

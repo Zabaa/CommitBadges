@@ -1,19 +1,20 @@
-﻿namespace Factories {
-    export abstract class BadgeFactory {
+﻿import { ResultComparator } from "./../result-comparators/ResultComparator";
+import { ViewBuilder } from "./../view-builders/ViewBuilder";
 
-        protected resultComparer: Comparators.ResultComparator;
-        protected viewBuilder: ViewBuilders.ViewBuilder;
+export abstract class BadgeFactory {
 
-        constructor(resultComparer: Comparators.ResultComparator, viewBuilder: ViewBuilders.ViewBuilder) {
-            if (resultComparer == null)
-                throw new Error('resultComparer is null');
-            this.resultComparer = resultComparer;
+    protected resultComparer: ResultComparator;
+    protected viewBuilder: ViewBuilder;
 
-            if (viewBuilder == null)
-                throw new Error('viewBuilder is null');
-            this.viewBuilder = viewBuilder
-        }
+    constructor(resultComparer: ResultComparator, viewBuilder: ViewBuilder) {
+        if (resultComparer == null)
+            throw new Error('resultComparer is null');
+        this.resultComparer = resultComparer;
 
-        public abstract create();
+        if (viewBuilder == null)
+            throw new Error('viewBuilder is null');
+        this.viewBuilder = viewBuilder
     }
+
+    public abstract create();
 }

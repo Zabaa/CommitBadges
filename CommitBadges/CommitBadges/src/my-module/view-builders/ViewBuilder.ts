@@ -1,5 +1,5 @@
-﻿namespace ViewBuilders {
-    export interface ViewBuilder {
-        build(badge: Badges.Badge);
-    }
+﻿import { Badge } from "./../badges/Badge";
+
+export interface ViewBuilder {
+    build(badge: Badge);
 }

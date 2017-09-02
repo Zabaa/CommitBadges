@@ -1,5 +1,5 @@
-﻿namespace Comparators {
-    export interface ResultComparator {
-        compare(count: number, badge: Badges.Badge);
-    }
+﻿import { Badge } from "./../badges/Badge";
+
+export interface ResultComparator {
+    compare(count: number, badge: Badge);
 }

@@ -1,7 +1,8 @@
-﻿namespace Comparators {
-    export class DefaultResultComparator implements Comparators.ResultComparator {
-        compare(count: number, badge: Badges.Badge) {
-            badge.points = count;
-        }
+﻿import { ResultComparator } from "./ResultComparator";
+import { Badge } from "./../badges/Badge";
+
+export class DefaultResultComparator implements ResultComparator {
+    public compare(count: number, badge: Badge) {
+        badge.points = count;
     }
 }

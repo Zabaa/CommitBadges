@@ -1,18 +1,18 @@
-﻿namespace Badges {
-    export class TaskMineBadge implements Badge {
-        public name: string;
-        public description: string;
-        public points: number;
-        public requiredPoints: number;
+﻿import { Badge } from "./../Badge";
 
-        constructor() {
-            this.name = "Task Miner Badge";
-            this.requiredPoints = 50;
-            this.description = `Create at least ${this.requiredPoints} tasks`;
-        }
+export class TaskMineBadge implements Badge {
+    public name: string;
+    public description: string;
+    public points: number;
+    public requiredPoints: number;
 
-        granted(): boolean {
-            return this.points >= this.requiredPoints;
-        }
+    constructor() {
+        this.name = "Task Miner Badge";
+        this.requiredPoints = 50;
+        this.description = `Create at least ${this.requiredPoints} tasks`;
+    }
+
+    granted(): boolean {
+        return this.points >= this.requiredPoints;
     }
 }
