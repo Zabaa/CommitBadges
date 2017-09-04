@@ -12,7 +12,7 @@ export class BugsSlayerBadge implements Badge {
         this.description = `Resolve at least ${this.requiredPoints} bugs`;
     }
 
-    granted(): boolean {
+    public granted(): boolean {
         return this.points >= this.requiredPoints;
     }
 }

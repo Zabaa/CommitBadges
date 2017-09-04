@@ -42,12 +42,14 @@
     <TypeScriptCompile Include="src\my-module\app.ts" />
     <TypeScriptCompile Include="src\my-module\badges\Badge.ts" />
     <TypeScriptCompile Include="src\my-module\badges\bugs\BugsSlayerBadge.ts" />
+    <TypeScriptCompile Include="src\my-module\badges\pullRequests\FirstButNotLastPullRequestBadge.ts" />
     <TypeScriptCompile Include="src\my-module\badges\tasks\TaskMineBadge.ts" />
     <TypeScriptCompile Include="src\my-module\CommitBadges.ts" />
     <TypeScriptCompile Include="src\my-module\FactoriesProcessor.ts" />
     <TypeScriptCompile Include="src\my-module\factories\AllFactories.ts" />
     <TypeScriptCompile Include="src\my-module\factories\BadgeFactory.ts" />
     <TypeScriptCompile Include="src\my-module\factories\BugsSlayerBadgeFactory.ts" />
+    <TypeScriptCompile Include="src\my-module\factories\FirstButNotLastPullRequestBadgeFactory.ts" />
     <TypeScriptCompile Include="src\my-module\factories\TaskMineBadgeFactory.ts" />
     <TypeScriptCompile Include="src\my-module\result-comparators\DefaultResultComparator.ts" />
     <TypeScriptCompile Include="src\my-module\result-comparators\ResultComparator.ts" />

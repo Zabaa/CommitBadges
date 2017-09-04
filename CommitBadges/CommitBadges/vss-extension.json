@@ -1,7 +1,7 @@
 ﻿{
   "namespace": "CommitBadges",
   "name": "Commit Badges",
-  "version": "0.1.12",
+  "version": "0.1.15",
   "description": "A simple extension for Visual Studio Online of a user's badges for achivements like numbers of resolved bugs",
   "publisher": "lukaszzaborski",
   "targets": [
@@ -29,7 +29,8 @@
   ],
   "scopes": [
     "vso.work",
-    "vso.profile"
+    "vso.profile",
+    "vso.code_status"
   ],
   "files": [
     {

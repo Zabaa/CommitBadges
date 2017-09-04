@@ -18,7 +18,6 @@ export class BugsSlayerBadgeFactory extends BadgeFactory {
         var query = { query: this.getQuery(userId) };
 
         client.queryByWiql(query, projectId).then(result => {
-            console.log(result.workItems.length);
             var badge = new BugsSlayerBadge();
             this.resultComparer.compare(result.workItems.length, badge);
             this.viewBuilder.build(badge);
