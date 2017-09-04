@@ -18,12 +18,14 @@ export class DefaultViewBuilder implements ViewBuilder {
         ];
 
         var gridOptions: Grids.IGridOptions = {
-            height: "600px",
-            width: "400px",
+            height: "450px",
+            width: "300px",
             source: source,
+            draggable: false,
+            allowMoveColumns: false,
             columns: [
-                { text: "Property", width: 200, index: "key" },
-                { text: "Value", width: 200, index: "value" }
+                { text: "Property", width: 200, index: "key", canSortBy: false },
+                { text: "Value", width: 200, index: "value", canSortBy: false }
             ]
         };
 
