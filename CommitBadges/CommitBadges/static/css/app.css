@@ -9,8 +9,9 @@ span {
 .badge-panel {
     display: inline-block;
     margin: 10px;
+    border: 1px solid #005a9e;
 }
 
-.grid-custom {
-    border: 1px solid #005a9e;
+body {
+    overflow: auto
 }
