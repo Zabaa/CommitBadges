@@ -1,15 +1,15 @@
 ﻿import { Badge } from "./../Badge";
 
-export class FirstButNotLastPullRequestBadge implements Badge {
+export class FirstCodeReviewBadge implements Badge {
     public name: string;
     public description: string;
     public points: number;
     public requiredPoints: number;
-
+        
     constructor() {
-        this.name = "First But Not Last";
+        this.name = "First Code Review";
         this.requiredPoints = 1;
-        this.description = 'Congratulations! Your first pull request is complete';
+        this.description = `That's a cool code review bro`;
     }
 
     public granted(): boolean {
