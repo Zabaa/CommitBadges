@@ -9,14 +9,14 @@
     "clean": "rimraf ./src/**/*.js && rimraf ./*.vsix"
   },
   "devDependencies": {
+    "@types/react": "15.6.14",
+    "@types/react-dom": "^15.5.2",
     "rimraf": "^2.5.4",
     "tfx-cli": "^0.3.45",
-    "typescript": "^2.1.4"
+    "typescript": "2.6.1"
   },
   "dependencies": {
-    "@types/jquery": "^2.0.34",
-    "@types/q": "0.0.32",
-    "vss-web-extension-sdk": "^2.109.0"
+    "vss-web-extension-sdk": "^5.131.0"
   },
   "-vs-binding": {
     "AfterBuild": [

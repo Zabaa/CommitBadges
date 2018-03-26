@@ -1,6 +1,6 @@
-﻿import { Badge } from "./../Badge";
+﻿import Badge from "./../Badge";
 
-export class BugsSlayerBadge implements Badge {
+export default class BugsSlayerBadge implements Badge {
     public name: string;
     public description: string;
     public points: number;

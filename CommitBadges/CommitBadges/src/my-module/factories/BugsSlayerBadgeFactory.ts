@@ -1,6 +1,6 @@
 ﻿import RestClient = require("TFS/WorkItemTracking/RestClient");
 import { BadgeFactory } from "./BadgeFactory";
-import { BugsSlayerBadge } from "./../badges/bugs/BugsSlayerBadge";
+import BugsSlayerBadge from "./../badges/bugs/BugsSlayerBadge";
 import { ResultComparator } from "./../result-comparators/ResultComparator";
 import { ViewBuilder } from "./../view-builders/ViewBuilder";
 

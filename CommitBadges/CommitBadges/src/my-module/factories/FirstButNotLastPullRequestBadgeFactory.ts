@@ -38,7 +38,8 @@ export class FirstButNotLastPullRequestBadgeFactory extends BadgeFactory {
             reviewerId: null,
             sourceRefName: null,
             status: Contracts.PullRequestStatus.Completed,
-            targetRefName: null
+            targetRefName: null,
+            sourceRepositoryId: null
         };
     }
 }

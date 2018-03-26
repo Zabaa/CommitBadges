@@ -1,4 +1,4 @@
-﻿import { Badge } from "./../Badge";
+﻿import Badge from "./../Badge";
 
 export class FirstCodeReviewBadge implements Badge {
     public name: string;

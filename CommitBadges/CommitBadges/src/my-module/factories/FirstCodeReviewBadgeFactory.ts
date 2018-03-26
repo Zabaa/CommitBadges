@@ -38,7 +38,8 @@ export class FirstCodeReviewBadgeFactory extends BadgeFactory {
             reviewerId: userId,
             sourceRefName: null,
             status: Contracts.PullRequestStatus.All,
-            targetRefName: null
+            targetRefName: null,
+            sourceRepositoryId: null
         };
     }
 }

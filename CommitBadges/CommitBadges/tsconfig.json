@@ -2,19 +2,23 @@
   "compilerOptions": {
     "module": "amd",
     "moduleResolution": "node",
-    "target": "es5",
+    "target": "es6",
     "lib": [ "es6", "dom" ],
+    "jsx": "react",
     "typeRoots": [
       "./node_modules/@types"
     ],
     "types": [
+      "react",
+      "react-dom",
       "vss-web-extension-sdk"
     ],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ],
   "exclude": [
     "node_modules",

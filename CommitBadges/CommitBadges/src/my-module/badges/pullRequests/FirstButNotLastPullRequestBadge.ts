@@ -1,4 +1,4 @@
-﻿import { Badge } from "./../Badge";
+﻿import Badge from "./../Badge";
 
 export class FirstButNotLastPullRequestBadge implements Badge {
     public name: string;

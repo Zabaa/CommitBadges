@@ -1,9 +1,7 @@
-﻿/// <reference types="vss-web-extension-sdk" />
-
-import Controls = require("VSS/Controls");
-import Grids = require("VSS/Controls/Grids");
+﻿import * as Controls from "VSS/Controls"
+import * as Grids from "VSS/Controls/Grids";
 import { ViewBuilder } from "./ViewBuilder";
-import { Badge } from "./../badges/Badge";
+import Badge from "./../badges/Badge";
 
 export class DefaultViewBuilder implements ViewBuilder {
     public build(badge: Badge) {
